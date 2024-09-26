@@ -13,13 +13,28 @@ class LoginControlador
             if($resultado["nombre"] == $correo and $resultado["contraseña"] == $contrasena){
                 header("Location: ../vista/ingreso.php");
             }else{
-                // header("Location: ../index.php");
-                echo"Contraseña o usuario incorrectos";
+                header("Location: ../index.php");
+                
             }
             
         }
         
     } 
+
+    public function registro($nombre, $apellido,$contraseña)
+    {
+        $con = new LoginModelo();
+        $registro = $con->conectar()->prepare("INSERT INTO usuarios (nombre,apellido,contraseña) 
+        VALUES $nombre, $apellido,$contraseña")->execute();
+        if($registro)
+        {
+            echo "usuario creado correctamente";
+        }
+        else 
+        {
+            echo "no se pudo corear el usuario correctamente";
+        }
+    }
     
 }
 $conexionE = new LoginControlador();

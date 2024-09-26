@@ -1,5 +1,5 @@
 <?php
-require "./modelo/login.modelo.php";
+require "../modelo/login.modelo.php";
 
 class LoginControlador
 {
@@ -11,7 +11,7 @@ class LoginControlador
             
             
             if($resultado["nombre"] == $correo and $resultado["contraseña"] == $contrasena){
-                header("Location: ../vistas/ingreso.php");
+                header("Location: ../vista/ingreso.php");
             }else{
                 // header("Location: ../index.php");
                 echo"Contraseña o usuario incorrectos";

@@ -1,32 +1,33 @@
 <?php
-include_once "./modelo/login.modelo.php";
+require "./modelo/login.modelo.php";
 
 class LoginControlador
 {
-    // aquí se validará la existencia de un usuario e ingresar
-    public function login()
-    {
-        // 
-        $conexion = LoginModelo::conectar();
-        if($conexion)
-        {
-            echo "conexión exitosa";
-
-        } else {
-            echo "Error al conectar";
+    // función para ingresar
+    public function ingresar($correo,$contrasena){
+        $con = LoginModelo::conectar()->query("SELECT * FROM usuarios");
+        
+        foreach($con as $resultado){
+            
+            
+            if($resultado["nombre"] == $correo and $resultado["contraseña"] == $contrasena){
+                header("Location: ../vistas/ingreso.php");
+            }else{
+                // header("Location: ../index.php");
+                echo"Contraseña o usuario incorrectos";
+            }
+            
         }
-    }
-
-    public function usuario()
-    {
-        $conexion = LoginModelo::conectar();
-        $conexion->prepare("SELECT * FROM usuarios")->execute();
-
-        foreach($conexion as $con)
-        {
-            echo $con[0];
-        }
-
-    }
+        
+    } 
     
 }
+$conexionE = new LoginControlador();
+
+
+$usuario = $_POST["usuario"];
+$contrasena = $_POST["contrasena"];
+
+
+
+$conexionE->ingresar($usuario,$contrasena);

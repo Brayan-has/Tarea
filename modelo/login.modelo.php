@@ -25,4 +25,6 @@ class LoginModelo
            echo "error de conexión: " . $e;    
         }
     }
+
+ 
 }

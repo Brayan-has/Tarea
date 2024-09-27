@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php include_once "../controlador/atras.controlador.php"?>
     <h1>Bienvenido <?php echo $_SESSION["usuario"] ?>!</h1>
     <button class="a">Salir</button>
     <script src="./salir.js"></script>

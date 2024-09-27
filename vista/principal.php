@@ -9,5 +9,7 @@
 </head>
 <body>
     <h1>Bienvenido <?php echo $_SESSION["usuario"] ?>!</h1>
+    <button class="a">Salir</button>
+    <script src="./salir.js"></script>
 </body>
 </html>

@@ -1,17 +1,19 @@
 <?php
 require "../modelo/login.modelo.php";
 
+session_start();
 class LoginControlador
 {
     // función para ingresar
-    public function ingresar($correo,$contrasena){
-        $con = LoginModelo::conectar()->query("SELECT * FROM usuarios");
-        
+    public function ingresar($usuario,$contrasena){
+        $con = LoginModelo::conectar()->prepare("SELECT nombre,contraseña FROM usuarios WHERE nombre = ? AND contraseña = ?");
+        $con->execute([$usuario,$contrasena]);
         foreach($con as $resultado){
-            
-            
-            if($resultado["nombre"] == $correo and $resultado["contraseña"] == $contrasena){
-                header("Location: ../vista/ingreso.php");
+
+            if($resultado["nombre"] === $usuario && $resultado["contraseña"] === $contrasena){
+                $_SESSION["usuario"] = $usuario;
+                
+                header("Location: ../vista/principal.php");
             }else{
                 header("Location: ../index.php");
                 
@@ -19,30 +21,14 @@ class LoginControlador
             
         }
         
-    } 
-
-    public function registro($nombre, $apellido,$contraseña)
-    {
-        $con = new LoginModelo();
-        $registro = $con->conectar()->prepare("INSERT INTO usuarios (nombre,apellido,contraseña) 
-        VALUES $nombre, $apellido,$contraseña")->execute();
-        if($registro)
-        {
-            echo "usuario creado correctamente";
-        }
-        else 
-        {
-            echo "no se pudo corear el usuario correctamente";
-        }
-    }
-    
+    }     
 }
-$conexionE = new LoginControlador();
+
 
 
 $usuario = $_POST["usuario"];
 $contrasena = $_POST["contrasena"];
 
-
+$conexionE = new LoginControlador();
 
 $conexionE->ingresar($usuario,$contrasena);

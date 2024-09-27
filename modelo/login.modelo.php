@@ -26,5 +26,10 @@ class LoginModelo
         }
     }
 
+    static function regitrar()
+    {
+
+    }
+
  
 }

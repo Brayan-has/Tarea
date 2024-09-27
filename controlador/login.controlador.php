@@ -8,18 +8,19 @@ class LoginControlador
     public function ingresar($usuario,$contrasena){
         $con = LoginModelo::conectar()->prepare("SELECT nombre,contraseña FROM usuarios WHERE nombre = ? AND contraseña = ?");
         $con->execute([$usuario,$contrasena]);
-        foreach($con as $resultado){
+        $resultado = $con->fetch(PDO::FETCH_ASSOC);
 
             if($resultado["nombre"] === $usuario && $resultado["contraseña"] === $contrasena){
                 $_SESSION["usuario"] = $usuario;
                 
                 header("Location: ../vista/principal.php");
+                exit();
             }else{
                 header("Location: ../index.php");
-                
+                break;
             }
             
-        }
+        
         
     }     
 }

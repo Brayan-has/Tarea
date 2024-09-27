@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: blueviolet;
+}
+
+h1 {
+
+    text-align: center; /* Centra el texto */
+    color: #ffffff; /* Color del texto */
+ 
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+.cuadro {
+    border: 1px solid #ccc; /* Borde del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin: 20px auto; /* Margen superior/inferior y centrado */
+    max-width: 300px; /* Ancho máximo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+.registro {
+
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}

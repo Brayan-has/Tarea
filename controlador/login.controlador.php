@@ -1,17 +1,34 @@
 <?php
-include_once "../modelo/login.modelo.php";
+require "../modelo/login.modelo.php";
 
+session_start();
 class LoginControlador
 {
-    // aquí se validará la existencia de un usuario e ingresar
-    public function login($user, $pass)
-    {
-        // 
-        $conexion = LoginModelo::conectar();
+    // función para ingresar
+    public function ingresar($usuario,$contrasena){
+        $con = LoginModelo::conectar()->prepare("SELECT nombre,contraseña FROM usuarios WHERE nombre = ? AND contraseña = ?");
+        $con->execute([$usuario,$contrasena]);
+        foreach($con as $resultado){
 
-        // if($conexion->pass = $pass && $conexion->user == $user)
-        // {
-        //     header("Location: ./");
-        // }
-    }
+            if($resultado["nombre"] === $usuario && $resultado["contraseña"] === $contrasena){
+                $_SESSION["usuario"] = $usuario;
+                
+                header("Location: ../vista/principal.php");
+            }else{
+                header("Location: ../index.php");
+                
+            }
+            
+        }
+        
+    }     
 }
+
+
+
+$usuario = $_POST["usuario"];
+$contrasena = $_POST["contrasena"];
+
+$conexionE = new LoginControlador();
+
+$conexionE->ingresar($usuario,$contrasena);

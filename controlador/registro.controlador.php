@@ -12,7 +12,8 @@ class RegistroControlador
         $con->prepare($consulta)->execute([$nombre,$contraseña]);
         if($con)
         {
-            echo "usuario creado correctamente";
+           echo "<script>alert('Usuario registrado correctamente');</script>";
+            echo "<script>window.location.href = '../index.php';</script>";
         }
         else 
         {

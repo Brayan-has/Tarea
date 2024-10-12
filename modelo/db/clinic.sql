@@ -1,4 +1,4 @@
-/*CREATE  clinic;*/
+CREATE DATBASE clinic;
 
 USE clinic;
 

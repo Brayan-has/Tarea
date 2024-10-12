@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
+    <?php ?>
     <h1>Registro</h1>
     <div class="cuadro">
     <form action="../controlador/registro.controlador.php" method="POST">

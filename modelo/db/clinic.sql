@@ -12,3 +12,11 @@ CREATE TABLE usuarios (
 
 INSERT INTO usuarios(nombre,apellido,contraseña)
 VALUES ('andres','123');
+
+CREATE TABLE productos(
+
+id INT PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(50),
+descripción VARCHAR(255),
+precio FLOAT
+);

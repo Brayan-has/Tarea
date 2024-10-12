@@ -2,14 +2,25 @@ let index = 0;
 
 function mostrarImagenes() {
     const imagenes = document.querySelectorAll('.imagenes img');
-    if (index >= imagenes.length) { index = 0; }
-    if (index < 0) { index = imagenes.length - 1; }
+    const totalImagenes = imagenes.length;
+
+    index = (index + totalImagenes) % totalImagenes;
+
     const offset = -index * 100;
     document.querySelector('.imagenes').style.transform = `translateX(${offset}%)`;
 }
 
 function cambiarImagen(direction) {
+    const imagenes = document.querySelectorAll('.imagenes img');
+    const totalImagenes = imagenes.length;
+    
     index += direction;
+    
+    if (index < 0) {
+        index = totalImagenes - 1; // Ir a la última imagen
+    } else if (index >= totalImagenes) {
+        index = 0; // Volver a la primera imagen
+    }
     mostrarImagenes();
 }
 

@@ -17,7 +17,7 @@ class LoginControlador
                 exit();
             }else{
                 header("Location: ../index.php");
-                break;
+                
             }
             
         

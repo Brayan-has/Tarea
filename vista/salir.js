@@ -1,7 +1,7 @@
 let salir = document.querySelector(".a")
 
 salir.addEventListener("click",(e)=>{
-   let seguro = confirm("seguro deseas sali?");
+   let seguro = confirm("Seguro deseas salir?");
 
    
    if(seguro)

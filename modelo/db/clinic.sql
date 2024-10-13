@@ -1,4 +1,4 @@
-CREATE DATABASE clinic;
+CREATE DATBASE clinic;
 
 USE clinic;
 

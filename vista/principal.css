@@ -95,6 +95,9 @@ li:hover:not(.btn)
     margin-top: 120px;
     margin-left: -27%;
 }
+
+
+
 /*aquí va el código de Santiago*/
 .carrusel {
     position: relative;
@@ -115,7 +118,7 @@ li:hover:not(.btn)
     display: block;
 }
 
-button {
+button:not("#b") {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -125,9 +128,30 @@ button {
 }
 
 .prev {
+    position: absolute;
     left: 10px;
+    margin-top: -200px;
+    margin-left: 10px;
+    /* margin-right: -100px; */
+    padding-right: -310;
+    opacity: 0.5;
 }
 
 .next {
+    position: absolute;
     right: 10px;
+    margin-top: -200px;
+    margin-left: 100px;
+    padding-right: -310;
+    opacity: 0.5;
+}
+
+/* la clase container contiene el carrusel */
+
+.container
+{   
+    width: 100%;
+    margin-top: 300px;
+    border: 1px solid  rgb(212, 212, 212);
+    background-color: gray;
 }

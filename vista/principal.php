@@ -26,7 +26,7 @@
         <p id="b">Bienvenid@ <?php echo $_SESSION["usuario"] ?>!</p>
     
     </h1>
-    
+    <!-- aquí va el código de Santiago -->
 
 
     <script src="./salir.js"></script>

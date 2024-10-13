@@ -12,6 +12,7 @@
     <?php include_once "../controlador/atras.controlador.php"?>
 
     <div class="header">
+       
         <nav class="nav">
             <ul><li><a href="#">Productos</a></li></ul>
             <ul><li><a href="#">Nosotros</a></li></ul>
@@ -20,7 +21,11 @@
             
         </nav>
     </div>
-    <h1>Bienvenid@ <?php echo $_SESSION["usuario"] ?>!</h1>
+    <h1 class="texto">
+        <p id="p">Proyecto anti consumo</p>
+        <p id="b">Bienvenid@ <?php echo $_SESSION["usuario"] ?>!</p>
+    
+    </h1>
     
 
 

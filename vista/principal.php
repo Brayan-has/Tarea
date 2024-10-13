@@ -32,18 +32,20 @@
     
     </h1>
     <!-- aquí va el código de Santiago -->
-
-    <div class="carrusel">
-    <div class="imagenes">
-        <img src="/Tarea/imagenes/imagen1.jpg" alt="Descripción 1">
-        <img src="/Tarea/imagenes/imagen2.jpg" alt="Descripción 2">
-        <img src="/Tarea/imagenes/imagen3.jpg" alt="Descripción 3">
-        <img src="/Tarea/imagenes/imagen4.jpg" alt="Descripción 3">
+    <div class="container">
+        
+        <div class="carrusel">
+        <div class="imagenes">
+            <img src="/Tarea/imagenes/imagen1.jpg" alt="Descripción 1">
+            <img src="/Tarea/imagenes/imagen2.jpg" alt="Descripción 2">
+            <img src="/Tarea/imagenes/imagen3.jpg" alt="Descripción 3">
+            <img src="/Tarea/imagenes/imagen4.jpg" alt="Descripción 3">
+        </div>
+        <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        <script src="carrusel.js"></script>
+        </div>
     </div>
-    <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
-    <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
-    <script src="carrusel.js"></script>
-</div>
 
     <script src="./salir.js"></script>
 </body>

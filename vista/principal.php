@@ -19,7 +19,7 @@
 
        
         <nav class="nav">
-            <ul><li><a href="#">Productos</a></li></ul>
+            <ul><li><a href="../vista/recursos.php">Recursos</a></li></ul>
             <ul><li><a href="#">Nosotros</a></li></ul>
             <ul><li><a href="#">Contacto</a></li></ul>
             <ul><li class="btn"><button class="a">salir</button></li></ul>

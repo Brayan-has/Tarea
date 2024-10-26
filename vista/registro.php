@@ -19,7 +19,7 @@
         <label for="contrasena">Crea tu contraseña</label>
         <input type="password" id="contrasena" name="contrasena" required><br>
 
-        <input type="submit" value="Registrate">
+        <input type="submit" value="Registrate" class="cuadro">
     </form>
 </body>
 </html>

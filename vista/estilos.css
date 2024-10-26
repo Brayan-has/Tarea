@@ -16,6 +16,8 @@ h1 {
 form {
     max-width: 300px;
     margin: auto;
+    text-decoration: none;
+    list-style: none;
 }
 
 input {
@@ -35,4 +37,42 @@ input {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
     background-color: #f9f9f9; /* Color de fondo */
     
+}
+
+.registro{
+    margin-top: -30px;
+    margin-left: 35%;
+}
+
+/* input:hover{
+    color: rgb(170, 170, 255);
+    opacity: 0.5;
+    pointer-events: fill;
+} */
+a{
+ 
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: rgb(38, 37, 37);
+}
+/* codigo para el cursor en el botón */
+input:hover:not(#usuario,#contrasena){
+    cursor: pointer;
+    background-color:rgb(193, 193, 255);
+}
+
+/*  */
+.contenedor
+{
+    
+    display: flex;
+    text-align:center;
+    height: 10px;
+    margin-left: 0%;
+    padding-top: 20px;
+    text-decoration: none;
+    list-style: none;
+
 }

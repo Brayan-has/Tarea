@@ -19,9 +19,11 @@
         <input type="password" id="contrasena" name="contrasena" required><br>
 
         <input type="submit" value="Iniciar Sesión" class="cuadro">
-        <li>
-           <a type="submit" href="./vista/registro.php" class="cuadro">Registrate</a>
-        </li>
+        <div class="contenedor">
+            <a type="submit" href="./vista/registro.php" class="registro">Registrate</a>
+        </div>
+        
+    </div>
     </form>
 </body>
 

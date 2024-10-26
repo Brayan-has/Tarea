@@ -19,4 +19,4 @@ id INT PRIMARY KEY AUTO_INCREMENT,
 nombre VARCHAR(50),
 descripción VARCHAR(255),
 precio FLOAT
-);
+);saledetails

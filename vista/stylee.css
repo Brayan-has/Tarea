@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  .poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+  .poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}'
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0071d4;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: absolute;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #bb0099;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #d0055d;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: center;
+    padding: 50px 0 0 0 ;
+}
+
+.header-content{
+    display: flex;
+    flex: 1;
+}
+
+.header-txt{
+    flex-basis:100%;
+    text-align: center;
+    
+    
+    
+}
+
+.header-txt span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.header-txt h1{
+    font-size: 100px;
+    color: #fff;
+    line-height: 1;
+    font-family: 'Bebas Neue',sans-serif;
+    margin: 10px 0 25px 0 ;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(
+        90deg,
+        rgb(255, 255, 255)
+        rgb(255, 255, 255)
+    );
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.about{
+    padding: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-img{
+    flex-basis: 40%;
+}
+
+.about-img img{
+    width: 350px;
+    border-radius: 15px;
+    border: 10px solid #ffffff;
+}
+
+.about-txt{
+    flex-basis: 60%;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-txt p{
+    color: #fefffe;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.butons a{
+    margin-right: 15px;
+}
+
+.portfolio{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio-content{
+    margin-top: 70px;
+}
+
+.portfolio-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.portfolio-txt span{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #49BADA;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.portfolio-txt h3{
+    color: #ffffff;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.portfolio-txt p{
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.portfolio-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.portfolio-img img{
+    width: 400px;
+}
+
+.skills{
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+
+.skills-content{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    justify-content: center;
+}
+
+.skills-content img{
+    width: 70px;
+}
+
+.footer{
+    padding: 50px 0 ;
+    background: linear-gradient(
+        90deg,
+        rgb(94, 6, 65)
+        rgb(168, 26, 92) 100%
+    );
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.link a{
+    color: #C5C5C5;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width:991px){
+    .menu{
+        padding: 20;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu navbar{
+        position: relative;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #49BADA;
+        display: none;
+    }
+    .menu navbar ul li a:hover{
+        color: #101630;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px 30px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+    
+    .about{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .butons a{
+        margin: 0 0 10px 0;
+    }
+
+    .portfolio{
+        padding: 30px;
+    }
+
+    .portfolio-content{
+        margin-top: 30px;
+    }
+
+    .portfolio-1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-txt{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-img{
+        order: 2;
+    }
+
+    .portfolio-img img{
+        width: 250px;
+    }
+
+    .skills{
+        padding: 0 30px 30px 30px;
+    }
+
+    .skills-content{
+        margin-top: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 100px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

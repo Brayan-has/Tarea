@@ -1,19 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: blueviolet;
-    
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
 }
 
 h1 {
 
     text-align: center; /* Centra el texto */
-    color: #ffffff; /* Color del texto */
+    color: #131212; /* Color del texto */
  
 }
 
 form {
     max-width: 300px;
     margin: auto;
+    text-decoration: none;
+    list-style: none;
 }
 
 input {
@@ -28,17 +32,47 @@ input {
     border: 1px solid #ccc; /* Borde del cuadro */
     border-radius: 8px; /* Bordes redondeados */
     padding: 20px; /* Espacio interno */
-    margin: 20px auto; /* Margen superior/inferior y centrado */
+    margin: 30px auto; /* Margen superior/inferior y centrado */
     max-width: 300px; /* Ancho máximo */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
     background-color: #f9f9f9; /* Color de fondo */
+    
 }
-.registro {
 
-    width: 90%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.registro{
+    margin-top: -30px;
+    margin-left: 35%;
+}
+
+/* input:hover{
+    color: rgb(170, 170, 255);
+    opacity: 0.5;
+    pointer-events: fill;
+} */
+a{
+ 
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: rgb(38, 37, 37);
+}
+/* codigo para el cursor en el botón */
+input:hover:not(#usuario,#contrasena){
+    cursor: pointer;
+    background-color:rgb(193, 193, 255);
+}
+
+/*  */
+.contenedor
+{
+    
+    display: flex;
+    text-align:center;
+    height: 10px;
+    margin-left: 0%;
+    padding-top: 20px;
+    text-decoration: none;
+    list-style: none;
 
 }

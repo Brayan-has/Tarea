@@ -18,11 +18,13 @@
         <label for="contrasena">Contraseña:</label>
         <input type="password" id="contrasena" name="contrasena" required><br>
 
-        <input type="submit" value="Iniciar Sesión">
-        <li>
-           <a href="./vista/registro.php" class="registro">Registrate</a>
-           
-        </li>
+        <input type="submit" value="Iniciar Sesión" class="cuadro">
+        <div class="contenedor">
+            <a type="submit" href="./vista/registro.php" class="registro">Registrate</a>
+        </div>
+        
+    </div>
     </form>
 </body>
+
 </html>

@@ -17,9 +17,6 @@ body{
     background-color: rgb(255, 255, 255);
     justify-content: right;
     /* box-shadow: 10px 5px 5px black; */
-
-    
-    
 }
 
 .nav
@@ -96,9 +93,6 @@ li:hover:not(.btn)
     margin-left: -27%;
 }
 
-
-
-/*aquí va el código de Santiago*/
 .carrusel {
     position: relative;
     width: 100%;
@@ -155,3 +149,30 @@ button:not("#b") {
     border: 1px solid  rgb(212, 212, 212);
     background-color: gray;
 }
+/*cambios de texto*/
+
+.contenido {
+    text-align: center; /* Centra el texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con algo de transparencia */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Tipografía */
+    font-size: 2.1em; /* Tamaño del título */
+    color: #0e0d0d; /* Color del texto */
+    
+}
+
+p {
+    font-family: 'Arial', sans-serif; /* Tipografía */
+    font-size: 1.1em; /* Tamaño del párrafo */
+    color: #0f0f0f; /* Color del texto */
+    max-width: 1200px; /* Establece un ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    text-align: center;
+
+}
+
